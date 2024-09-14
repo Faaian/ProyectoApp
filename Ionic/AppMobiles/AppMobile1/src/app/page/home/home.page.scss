@@ -1,6 +1,5 @@
-/* Encabezado */
 ion-header {
-    --background: #00796b; /* Verde oscuro para el encabezado */
+    --background: #00796b;
     --padding-start: 0;
     --padding-end: 0;
     --border: none;
@@ -11,7 +10,7 @@ ion-toolbar {
     --border-width: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacio entre título y botón del menú */
+    justify-content: space-between;
     padding: 0 15px;
 }
 
@@ -23,10 +22,9 @@ ion-title {
     color: #ffffff;
 }
 
-/* Contenido del menú */
 ion-menu {
-    --background: #ffffff; /* Fondo blanco para el menú */
-    --width: 250px; /* Ancho del menú */
+    --background: #ffffff;
+    --width: 250px;
 }
 
 ion-menu ion-list {
@@ -38,9 +36,8 @@ ion-menu ion-item {
     --padding-end: 20px;
 }
 
-/* Contenido principal */
 ion-content {
-    --background: #f0f4f4; /* Fondo gris claro para el contenido */
+    --background: #f0f4f4;
     padding: 20px;
 }
 
@@ -49,11 +46,11 @@ ion-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Asegurar que el contenedor ocupe toda la altura disponible */
+    height: 100%;
 }
 
 h1 {
-    color: #000; /* Negro para el título */
+    color: #000;
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -61,30 +58,29 @@ h1 {
 }
 
 p {
-    color: #333; /* Gris oscuro para el texto */
+    color: #333;
     font-size: 16px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 ion-button {
-    --background: #00796b; /* Verde oscuro para el botón */
+    --background: #00796b;
     --color: #fff;
     --height: 55px;
     --border-radius: 8px;
     --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 18px;
-    width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+    width: 100%;
 }
 
 ion-button:hover {
-    --background: #004d40; /* Verde aún más oscuro en hover */
+    --background: #004d40;
 }
 
-/* Estilos responsivos */
 @media (max-width: 600px) {
     ion-menu {
-        --width: 200px; /* Ajustar el ancho del menú en pantallas pequeñas */
+        --width: 200px;
     }
 
     h1 {

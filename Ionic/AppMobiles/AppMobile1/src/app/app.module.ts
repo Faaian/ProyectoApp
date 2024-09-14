@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModel } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
