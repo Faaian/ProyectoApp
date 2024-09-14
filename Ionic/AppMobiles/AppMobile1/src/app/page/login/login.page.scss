@@ -1,35 +1,50 @@
 ion-header {
-  --background: #4CAF50;
+  --background: #00796b;
+  --padding-start: 0;
+  --padding-end: 0;
+  --border: none;
 }
 
 ion-toolbar {
   --background: transparent;
   --border-width: 0;
-}
-
-ion-header img {
-  max-width: 100%;
-  height: auto;
-}
-
-ion-content {
-  --background: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 15px;
+}
+
+ion-header img {
+  max-width: 150px;
+  height: auto;
+}
+
+ion-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+}
+
+ion-content {
+  --background: #f0f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .login-container {
   width: 90%;
   max-width: 500px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
   display: flex;
   flex-direction: column;
 }
-
 
 form {
   display: flex;
@@ -38,42 +53,66 @@ form {
 
 ion-item {
   margin-bottom: 20px;
+  padding: 0;
 }
 
 ion-label {
-  color: #333;
+  color: #000;
+  font-size: 16px;
 }
 
 ion-input {
   --padding-start: 15px;
   --padding-end: 15px;
-  --height: 50px;
+  --height: 55px;
+  --background: #e0f2f1;
+  border-radius: 5px;
+  --border-color: #00796b;
+  --border-width: 1px;
+  color: #000;
 }
 
 ion-button {
   margin-top: 20px;
-  --background: #4CAF50;
+  --background: #00796b;
   --color: #fff;
-  --height: 50px;
+  --height: 55px;
   --border-radius: 8px;
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
 }
 
 ion-button:hover {
-  --background: #45a049;
+  --background: #004d40;
 }
 
-/* Enlaces */
 ion-row.links {
   margin-top: 30px;
   text-align: center;
 }
 
 ion-col a {
-  color: #4CAF50;
+  color: #00796b;
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
 }
 
 ion-col a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  ion-title {
+      font-size: 20px;
+  }
+
+  .login-container {
+      padding: 15px;
+  }
+
+  ion-button {
+      font-size: 16px;
+      --height: 50px;
+  }
 }

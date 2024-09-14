@@ -1,14 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <div>
-      <img width="150" src="assets/img/th.jpg" alt="">
+      <img width="150" src="assets/img/th.jpg" alt="Logo">
     </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item>
-    <ion-input [(ngModel)]="email" label="Email" type="email" placeholder=""></ion-input>
-  </ion-item>
-  <ion-button (click)="recuperar()" expand="block">Recuperar</ion-button>
+  <div class="recovery-container">
+    <h1>Recuperar Contraseña</h1>
+    <ion-item>
+      <ion-input [(ngModel)]="email" label="Email" type="email" placeholder=""></ion-input>
+    </ion-item>
+    <ion-button (click)="recuperar()" expand="block">Recuperar</ion-button>
+  </div>
 </ion-content>

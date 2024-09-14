@@ -1,0 +1,98 @@
+/* Encabezado */
+ion-header {
+    --background: #00796b; /* Verde oscuro para el encabezado */
+    --padding-start: 0;
+    --padding-end: 0;
+    --border: none;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre título y botón del menú */
+    padding: 0 15px;
+}
+
+ion-menu-button {
+    color: #ffffff;
+}
+
+ion-title {
+    color: #ffffff;
+}
+
+/* Contenido del menú */
+ion-menu {
+    --background: #ffffff; /* Fondo blanco para el menú */
+    --width: 250px; /* Ancho del menú */
+}
+
+ion-menu ion-list {
+    margin: 0;
+}
+
+ion-menu ion-item {
+    --padding-start: 20px;
+    --padding-end: 20px;
+}
+
+/* Contenido principal */
+ion-content {
+    --background: #f0f4f4; /* Fondo gris claro para el contenido */
+    padding: 20px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Asegurar que el contenedor ocupe toda la altura disponible */
+}
+
+h1 {
+    color: #000; /* Negro para el título */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    color: #333; /* Gris oscuro para el texto */
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ion-button {
+    --background: #00796b; /* Verde oscuro para el botón */
+    --color: #fff;
+    --height: 55px;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+}
+
+ion-button:hover {
+    --background: #004d40; /* Verde aún más oscuro en hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    ion-menu {
+        --width: 200px; /* Ajustar el ancho del menú en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    ion-button {
+        font-size: 16px;
+        --height: 50px;
+    }
+}

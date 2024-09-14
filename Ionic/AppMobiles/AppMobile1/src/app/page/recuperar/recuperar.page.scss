@@ -1,62 +1,71 @@
-/* Estilos para el contenedor de la página de recuperación */
 ion-header {
-    --padding-start: 0;
-    --padding-end: 0;
-  }
-  
-  ion-toolbar {
-    display: flex;
-    justify-content: center;
-    --background: transparent;
-  }
-  
-  ion-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
-  }
-  
-  img {
-    margin-bottom: 20px;
-  }
-  
-  ion-item {
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  
+  --background: #00796b;
+  --padding-start: 0;
+  --padding-end: 0;
+  --border: none;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --border-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+ion-header img {
+  max-width: 150px;
+  height: auto;
+}
+
+ion-content {
+  --background: #f0f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+ion-item {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+ion-input {
+  --padding-start: 15px;
+  --padding-end: 15px;
+  --height: 55px;
+  --background: #e0f2f1;
+  border-radius: 5px;
+  --border-color: #00796b;
+  --border-width: 1px;
+  color: #000;
+}
+
+ion-button {
+  --background: #00796b;
+  --color: #fff;
+  --height: 55px;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  width: 100%;
+}
+
+ion-button:hover {
+  --background: #004d40;
+}
+
+@media (max-width: 600px) {
   ion-input {
-    --padding-start: 10px;
+      --height: 45px;
   }
-  
+
   ion-button {
-    background-color: #616161;
-    color: white;
-    border-radius: 5px;
-    width: 100%;
+      font-size: 16px;
+      --height: 50px;
   }
-  
-  ion-button:hover {
-    background-color: #424242;
-  }
-  
-  ion-row {
-    margin-top: 20px;
-    width: 100%;
-  }
-  
-  ion-col {
-    text-align: left;
-  }
-  
-  a {
-    color: #616161;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+}
