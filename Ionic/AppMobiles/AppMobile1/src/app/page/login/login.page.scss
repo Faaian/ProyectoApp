@@ -1,0 +1,44 @@
+/* src/app/home/home.page.scss */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+  }
+  
+  ion-input {
+    --padding-start: 10px;
+  }
+  
+  ion-button {
+    background-color: #616161;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  ion-button:hover {
+    background-color: #424242;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .links a {
+    color: #616161;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  

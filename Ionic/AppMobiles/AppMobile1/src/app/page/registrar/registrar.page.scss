@@ -1,0 +1,26 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+  }
+  
+  ion-input {
+    --padding-start: 10px;
+  }
+  
+  ion-button {
+    background-color: #616161;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  ion-button:hover {
+    background-color: #424242;
+  }
+  

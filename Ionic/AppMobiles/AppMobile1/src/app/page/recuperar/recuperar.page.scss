@@ -1,0 +1,62 @@
+/* Estilos para el contenedor de la página de recuperación */
+ion-header {
+    --padding-start: 0;
+    --padding-end: 0;
+  }
+  
+  ion-toolbar {
+    display: flex;
+    justify-content: center;
+    --background: transparent;
+  }
+  
+  ion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+  }
+  
+  img {
+    margin-bottom: 20px;
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  ion-input {
+    --padding-start: 10px;
+  }
+  
+  ion-button {
+    background-color: #616161;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  ion-button:hover {
+    background-color: #424242;
+  }
+  
+  ion-row {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  ion-col {
+    text-align: left;
+  }
+  
+  a {
+    color: #616161;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
